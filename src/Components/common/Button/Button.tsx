@@ -6,6 +6,7 @@ const Button: React.FC<IButtonPropInterface> = ({
   children,
   className,
 }) => {
+
   return (
     <button className={className} onClick={onClick}>
       {children}
