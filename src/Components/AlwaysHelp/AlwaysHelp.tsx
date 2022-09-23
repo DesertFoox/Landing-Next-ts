@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AlwaysHelp = () => {
   return (
-    <section className="container mx-auto ourworks mt-56">
+    <section className="container mx-auto ourworks mt-32">
       <div className="grid grid-cols-2">
         <div>
           <Image width={"666"} height={"458"} src={"/images/AlwaysHelp.svg"} />
