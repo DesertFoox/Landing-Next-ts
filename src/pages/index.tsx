@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import AlwaysHelp from "../Components/AlwaysHelp/AlwaysHelp";
+import AlwaysHelp from "../Components/AlwaysHelpSection/AlwaysHelp";
 
 import Header from "../Components/Header/Header";
 import HeroSection from "../Components/HeroSection/HeroSection";
