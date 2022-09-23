@@ -20,6 +20,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'herobg':"url('../../../public/images/HeroBackground.svg')"
+      },
       colors: {
         'purple-primary': '#A174DB',
         'green-secondary': '#49BE55',
