@@ -17,7 +17,7 @@ const Header: React.FC = (): JSX.Element => {
   useEffect(() => {});
 
   return (
-    <header className="flex justify-between mt-3">
+    <header className="container mx-auto flex justify-between mt-3">
       <div className="logo">
         <Image src={"/images/Logo.svg"} width="141.51" height="41.23" />
       </div>
