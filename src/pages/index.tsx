@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import AlwaysHelp from "../Components/AlwaysHelp/AlwaysHelp";
 
 import Header from "../Components/Header/Header";
 import HeroSection from "../Components/HeroSection/HeroSection";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <HeroSection />
       <OurWorkSection />
+      <AlwaysHelp />
     </div>
   );
 };
