@@ -10,12 +10,12 @@ const ProductSection: React.FC = (): JSX.Element => {
           <strong className="font-bold"> Products </strong>
         </p>
 
-        <p className="text-[15px] mt-[30px]">
+        <p className="text-[15px] text-[#777] mt-[30px] leading-[27px] w-[490px] mx-auto">
           Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
           habemus sea ut. His nibh scripta in. In sea vocibus facilisis.
         </p>
       </div>
-      <div className="cards flex flex-wrap flex-row p-8 justify-center items-center gap-[30px]">
+      <div className="cards flex flex-wrap flex-row p-8 justify-center items-center gap-[30px] mt-2">
         <ProductCard
           image={"/images/Earth.svg"}
           description={

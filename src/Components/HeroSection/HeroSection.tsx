@@ -4,11 +4,11 @@ import Button from "../common/Button/Button";
 
 const HeroSection: React.FC = (): JSX.Element => {
   return (
-    <section className="herosection bg-herobg mt-8 h-[688.3px]">
+    <section className="herosection bg-herobg mt-16 h-[688.3px]">
       <div className="flex flex-col  items-center">
-        <h1 className="text-5xl font-bold">We Create Simple Solution</h1>
-        <h2 className="text-5xl mt-2">For Your Complex Task</h2>
-        <p className="text-[14px] text-[#555555] w-[532px] mt-4 text-center">
+        <h1 className="text-5xl text-[#222222] font-bold">We Create Simple Solution</h1>
+        <h2 className="text-5xl text-[#222222] mt-2">For Your Complex Task</h2>
+        <p className="text-[14px] text-[#555555] w-[532px] mt-6 text-center">
           Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
           elaboraret interpretaris, sed diceret concludaturque no. Verear
           habemus sea ut

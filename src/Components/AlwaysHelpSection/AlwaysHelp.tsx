@@ -13,12 +13,12 @@ const AlwaysHelp = () => {
           <div className="text-4xl mt-2  w-[271px]">
             <h2 className="font-bold">always help</h2> <p>you</p>
           </div>
-          <p className="mt-6 w-[444px]">
+          <p className="mt-6 w-[444px] text-[#777]">
             Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, a
             elaboraret interpretaris, sed diceret concludaturque nasdo habemus
             sea ut. His nibh scripta in. In sea vocibus facilisis.
           </p>
-          <p className="mt-5 w-[434px]">
+          <p className="mt-5 w-[434px] text-[#777]">
             vel cu paulo doctus vidsse. Iudico dicant nostrum nec aIn detraxit
             eleifend duo, alterum iudicabit consectetuer per.{" "}
           </p>

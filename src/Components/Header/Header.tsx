@@ -17,12 +17,13 @@ const Header: React.FC = (): JSX.Element => {
   useEffect(() => {});
 
   return (
-    <header className="container mx-auto flex justify-between mt-3">
-      <div className="logo">
+    <header className="container mx-auto flex justify-between mt-8 items-center">
+      <div className="flex flex-row">
+      <div className="">
         <Image src={"/images/Logo.svg"} width="141.51" height="41.23" />
       </div>
-      <div className="Headeritems  mt-3 ml-[17rem]">
-        <div className="Headeritems flex gap-7  text-md ">
+      <div className="mt-3 ml-[9rem]">
+        <div className="flex gap-12 text-base">
           {HeaderItem.map((item: IHeaderInterface) => (
             <Link
               onClick={(): any => setHeaderItem(item.name)}
@@ -39,6 +40,7 @@ const Header: React.FC = (): JSX.Element => {
           ))}
         </div>
         <div className="rounded-full w-2 h-2 bg-[#9D60EB] mx-5"></div>
+      </div>
       </div>
       <div className="Commontab mt-2 flex gap-7 ">
         <div className="border border-[#C6BAF8] grid grid-cols-12 rounded px-3 w-[270px]">
