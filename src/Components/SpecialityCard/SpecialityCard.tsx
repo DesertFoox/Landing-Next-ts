@@ -12,7 +12,7 @@ const SpecialityCard: React.FC<ISpecialityCardProps> = ({
   return (
     <>
       <div
-        className={`w-[350px] h-[440px] rounded-md shadow-[0px_10px_30px_#ccc] text-center p-5 bg--300 ${className}`}
+        className={`w-[350px] h-[440px] rounded-md shadow-[0px_10px_20px_#ccc] text-center p-5 bg--300 ${className}`}
       >
         <Image className="mt-[37px]" src={image} width={210} height={211} />
         <p className="text-2xl  mt-[15px]">

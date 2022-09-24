@@ -8,7 +8,7 @@ import SpecialityCard from "../SpecialityCard/SpecialityCard";
 const SpecialitySection: React.FC = (): JSX.Element => {
   return (
     <>
-      <section className="speciality container mx-auto mt-14">
+      <section className="speciality container mx-auto mt-32">
         <div className="description text-4xl text-center">
           <p>What is the</p>
           <h2 className="font-bold"> Speciality Of Us ?</h2>
@@ -40,11 +40,11 @@ const SpecialitySection: React.FC = (): JSX.Element => {
           />
         </div>
         <div className="flex justify-center gap-[30px] mt-[30px]">
-          <div className="w-[50px] h-[50px] shadow-[0px_10px_30px_#999999]  flex justify-center items-center  rounded-full text-center cursor-pointer">
-            <AiOutlineArrowLeft className="text-[25px]" />
+          <div className="w-[50px] h-[50px] shadow-[0px_10px_20px_#ccc]  flex justify-center items-center  rounded-full text-center cursor-pointer">
+            <AiOutlineArrowLeft className="text-[25px] text-[#000000]" />
           </div>
-          <div className="w-[50px] h-[50px] shadow-[0px_10px_30px_#999999] flex justify-center items-center rounded-full text-center cursor-pointer">
-            <AiOutlineArrowRight className="text-[25px]" />
+          <div className="w-[50px] h-[50px] shadow-[0px_10px_20px_#ccc] flex justify-center items-center rounded-full text-center cursor-pointer">
+            <AiOutlineArrowRight className="text-[25px] text-[#000000]" />
           </div>
         </div>
       </section>
