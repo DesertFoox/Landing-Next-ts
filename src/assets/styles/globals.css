@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.client{
-    background: url('../../../public/images/Group 2482.png') no-repeat center;
+.client {
+  background: url("/images/Clients.png") no-repeat center;
 }
 
-.form-container{
-    background:  url('../../../public//images/Group\ 2483.png') no-repeat 87% 50%;
+.form-container {
+  background: url("/images/bubles.png") no-repeat 87% 50%;
 }
 
-.form-container{
-    background:  url('../../../public//images/Group\ 2186.png'), linear-gradient(to top,#E2F2FF, #E7F4FF);
+.form-container {
+  background: url("/images/Touchnow.png") no-repeat 0 100%
 }
