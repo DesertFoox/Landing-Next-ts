@@ -24,8 +24,9 @@ const Header: React.FC = (): JSX.Element => {
       </div>
       <div className="mt-3 ml-[9rem]">
         <div className="flex gap-12 text-base">
-          {HeaderItem.map((item: IHeaderInterface) => (
+          {HeaderItem.map((item: IHeaderInterface,index:number) => (
             <Link
+            key={index}
               onClick={(): any => setHeaderItem(item.name)}
               href={item.href}
             >

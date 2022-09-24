@@ -19,8 +19,10 @@ const Footer: React.FC = (): JSX.Element => {
             <h4 className="text-[#222] text-lg font-bold  mb-[23px]">
               Contact Us
             </h4>
-            {Contactus.map((item: any) => (
-              <p className="mb-[16px] text-[#777777}">{item.name}</p>
+            {Contactus.map((item: any, index: number) => (
+              <p key={index} className="mb-[16px] text-[#777777}">
+                {item.name}
+              </p>
             ))}
           </div>
 
@@ -28,8 +30,8 @@ const Footer: React.FC = (): JSX.Element => {
             <h4 className="text-[#222] mb-[23px] text-lg font-bold">
               Our Company
             </h4>
-            {HeaderItem.map((item: any) => (
-              <Link href={item.href}>
+            {HeaderItem.map((item: any,index:number) => (
+              <Link key={index} href={item.href}>
                 <h2 className="mb-[16px] text-[#777777}">{item.name}</h2>
               </Link>
             ))}
@@ -39,8 +41,8 @@ const Footer: React.FC = (): JSX.Element => {
             <h4 className="text-[#222] text-lg font-bold mb-[23px]">
               Social Contacts
             </h4>
-            {SocialContacts.map((item: any) => (
-              <Link href={item.href}>
+            {SocialContacts.map((item: any,index:number) => (
+              <Link key={index} href={item.href}>
                 <h3 className="mb-[16px] text-[#777777}">{item.name}</h3>
               </Link>
             ))}
