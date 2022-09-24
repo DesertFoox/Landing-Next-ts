@@ -6,6 +6,7 @@ import AlwaysHelp from "../Components/AlwaysHelpSection/AlwaysHelp";
 import Header from "../Components/Header/Header";
 import HeroSection from "../Components/HeroSection/HeroSection";
 import OurWorkSection from "../Components/OurWorkSection/OurWorkSection";
+import SpecialitySection from "../Components/SpecialitySection/SpecialitySection";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <HeroSection />
       <OurWorkSection />
       <AlwaysHelp />
+      <SpecialitySection />
     </div>
   );
 };

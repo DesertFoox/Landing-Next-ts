@@ -1,6 +1,6 @@
 import React from "react";
 
-import IButtonPropInterface from "../../../Core/PropInterface/IButtonPropInetrface";
+import IButtonPropInterface from "../../../Core/PropInterface/IButtonProps";
 const Button: React.FC<IButtonPropInterface> = ({
   onClick,
   children,
