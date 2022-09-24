@@ -12,7 +12,7 @@ const ProductSection: React.FC = (): JSX.Element => {
 
         <p className="text-[15px] mt-[30px]">
           Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
-          habemus sea ut. His nibh scripta in. In sea vocibus facilisis.{" "}
+          habemus sea ut. His nibh scripta in. In sea vocibus facilisis.
         </p>
       </div>
       <div className="cards flex flex-wrap flex-row p-8 justify-center items-center gap-[30px]">
