@@ -8,6 +8,9 @@ import OurWorkSection from "../Components/OurWorkSection/OurWorkSection";
 import ProductSection from "../Components/ProductsSection/ProductSection";
 import SpecialitySection from "../Components/SpecialitySection/SpecialitySection";
 import AlwaysHelp from "../Components/AlwaysHelpSection/AlwaysHelp";
+import ClientsSection from "../Components/ClientsSection/ClientsSection";
+import ProblemForm from "../Components/ProblemForm/ProblemForm";
+import Footer from "../Components/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +27,9 @@ const Home: NextPage = () => {
       <AlwaysHelp />
       <SpecialitySection />
       <ProductSection />
+      <ClientsSection />
+      <ProblemForm />
+      <Footer />
 
     </>
   );
