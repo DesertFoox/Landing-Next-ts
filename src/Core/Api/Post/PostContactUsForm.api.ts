@@ -14,7 +14,7 @@ const PostContactUsForm = async (
       "https://61cd783e7067f600179c5aa8.mockapi.io/api/ContactUs",
       postData
     );
-    toast.error(res);
+    toast.done(res);
 
     return res;
   } catch (error: any) {
