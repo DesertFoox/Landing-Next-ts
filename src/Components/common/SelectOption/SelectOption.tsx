@@ -10,18 +10,17 @@ const SelectOption: React.FC<ISelectOptionProps> = ({
   className,
   options,
   register,
-  registerName
+  registerName,
 }): JSX.Element => {
   return (
     <>
       <p className="text-[#222] text-[14px]">{label}</p>
       <select
         {...register(registerName)}
-        value={options[0].value}
         className={`border-b border-[#E5E5E5] py-3 text-[13px] outline-none ${className}`}
       >
         {options.map((opt: IOptionDto, index: number) => (
-          <option key={index} >
+          <option value={opt.value} key={index}>
             {opt.text}
           </option>
         ))}
