@@ -1,20 +1,22 @@
+import react, { useState } from "react";
 import "../assets/styles/globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import type { AppProps } from "next/app";
 import {
+  Hydrate,
   QueryClient,
   QueryClientProvider,
-  useQuery,
 } from "@tanstack/react-query";
 
+function MyApp({ Component, pageProps }: any) {
+  const [queryClient] = useState(() => new QueryClient());
 
-const queryClient = new QueryClient();
-function MyApp({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
-      <Component {...pageProps} />
+      <Hydrate state={pageProps.dehydratedState}>
+        <Component {...pageProps} />
+      </Hydrate>
     </QueryClientProvider>
   );
 }

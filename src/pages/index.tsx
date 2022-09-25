@@ -1,6 +1,11 @@
-import type { NextPage } from "next";
+import type {
+  NextPage,
+  GetServerSideProps,
+  InferGetStaticPropsType,
+} from "next";
 import Head from "next/head";
-import Image from "next/image";
+
+import { dehydrate, QueryClient } from "@tanstack/react-query";
 
 import Header from "../Components/Header/Header";
 import HeroSection from "../Components/HeroSection/HeroSection";
@@ -12,7 +17,13 @@ import ClientsSection from "../Components/ClientsSection/ClientsSection";
 import ProblemForm from "../Components/ProblemForm/ProblemForm";
 import Footer from "../Components/Footer/Footer";
 
-const Home: NextPage = () => {
+import GetContactUsFormApi from "../Core/Api/Get/GetContactUsForm.api";
+
+import IGetContactUsFormInterface from "../Core/Interface/IGetContactUsFormInterface";
+
+const Home = ({
+  dehydratedState,
+}: InferGetStaticPropsType<GetServerSideProps>) => {
   return (
     <>
       <Head>
@@ -28,11 +39,24 @@ const Home: NextPage = () => {
       <SpecialitySection />
       <ProductSection />
       <ClientsSection />
-      <ProblemForm />
+      <ProblemForm form={dehydratedState} />
       <Footer />
-
     </>
   );
 };
 
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const queryClient = new QueryClient();
+
+  await queryClient.fetchQuery(
+    ["get"],
+    async () => await GetContactUsFormApi()
+  );
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient).queries[0].state.data,
+    },
+  };
+};
 export default Home;
