@@ -4,12 +4,15 @@ import React from "react";
 import { CgFacebook } from "react-icons/cg";
 import { AiOutlineSkype, AiOutlineInstagram } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import {MdOutlineMailOutline, MdLocationOn} from 'react-icons/md'
 
 import HeaderItem from "../../Constant/HeaderItem.json";
 import SocialContacts from "../../Constant/SocialContacts.json";
 import Contactus from "../../Constant/ContactUs.json";
 
 const Footer: React.FC = (): JSX.Element => {
+  const [contactElement] = React.useState([<BsFillTelephoneFill className="text-[#9D60EB]" />, <MdLocationOn className="text-[#9D60EB] text-xl" />, <MdOutlineMailOutline className="text-[#9D60EB] text-xl" />])
   return (
     <div className="">
       <div className="max-w-7xl mx-auto flex flex-col items-center mt-6">
@@ -23,7 +26,8 @@ const Footer: React.FC = (): JSX.Element => {
               Contact Us
             </h4>
             {Contactus.map((item: any, index: number) => (
-              <p key={index} className="mb-[16px] text-[#777777] hover:underline cursor-pointer">
+              <p key={index} className="mb-[16px] text-[#777777] hover:underline cursor-pointer flex flex-row gap-3 items-center">
+                {contactElement[index]}
                 {item.name}
               </p>
             ))}
