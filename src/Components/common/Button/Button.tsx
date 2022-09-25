@@ -5,10 +5,15 @@ const Button: React.FC<IButtonPropInterface> = ({
   onClick,
   children,
   className,
+  type
 }) => {
-
   return (
-    <button className={`${className} hover:scale-105 transition`} onClick={onClick}>
+    <button
+    //@ts-ignore
+      type={type}
+      className={`${className} hover:scale-105 transition`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

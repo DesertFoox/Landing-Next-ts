@@ -11,8 +11,7 @@ axios.interceptors.response.use(
       error.response.state >= 400 &&
       error.response.status < 500;
     if (!expectedError) {
-      // tweak it later
-      console.log(error.response.data.message[0]);
+      return error.message
     }
     return Promise.reject(error);
   }
