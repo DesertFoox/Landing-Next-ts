@@ -3,7 +3,7 @@ interface IGetContactUsFormInterface {
   field_title: string;
   field_placeholder: string;
   field_option: Array<any>;
-  field_postnam: string;
+  field_postname: string;
   id: number;
   field_break: boolean;
 }

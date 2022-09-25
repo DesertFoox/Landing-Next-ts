@@ -1,7 +1,7 @@
 interface IButtonPropInterface {
-  onClick?: () => any;
+  onClick?: (e: any) => any;
   children: any;
   className?: string;
 }
 
-export default IButtonPropInterface
+export default IButtonPropInterface;
