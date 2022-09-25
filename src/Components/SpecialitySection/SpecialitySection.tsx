@@ -8,7 +8,7 @@ import Button from "../common/Button/Button";
 import SpecialityCard from "../SpecialityCard/SpecialityCard";
 
 const SpecialitySection: React.FC = (): JSX.Element => {
-  const [sliderSetting, setSlderSetting] = useState<Settings>({
+  const [sliderSetting] = useState<Settings>({
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -26,7 +26,7 @@ const SpecialitySection: React.FC = (): JSX.Element => {
           <p>What is the</p>
           <h2 className="font-bold"> Speciality Of Us ?</h2>
         </div>
-        <Slider ref={slider} className="bg-white" {...sliderSetting}>
+        <Slider ref={slider} className="bg-white mt-[40px]" {...sliderSetting}>
           <SpecialityCard
             image={"/images/QuickRes.svg"}
             title={{ normal: "Quick ", bold: "Response" }}
