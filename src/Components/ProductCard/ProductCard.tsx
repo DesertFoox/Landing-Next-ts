@@ -20,7 +20,7 @@ const ProductCard: React.FC<IProductCardProps> = ({
           {description}
         </p>
         <Link href={href}>
-          <p className="text-[#49BE55] mt-[33px]">Learn More</p>
+          <p className="text-[#49BE55] mt-[33px] hover:underline cursor-pointer">Learn More</p>
         </Link>
       </div>
     </>

@@ -33,8 +33,8 @@ const ClientsSection: React.FC = (): JSX.Element => {
       <p className="text-[16px] text-center mt-4">CEO, Zexbay-Fine</p>
 
       <div className="flex flex-row gap-16 text-[#222] mt-8 text-xl">
-        <AiOutlineArrowLeft className="cursor-pointer" />
-        <AiOutlineArrowRight className="cursor-pointer" />
+        <AiOutlineArrowLeft className="cursor-pointer hover:scale-125 transition" />
+        <AiOutlineArrowRight className="cursor-pointer hover:scale-125 transition" />
       </div>
     </div>
   );

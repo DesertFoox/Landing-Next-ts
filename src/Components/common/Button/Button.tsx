@@ -8,7 +8,7 @@ const Button: React.FC<IButtonPropInterface> = ({
 }) => {
 
   return (
-    <button className={className} onClick={onClick}>
+    <button className={`${className} hover:scale-105 transition`} onClick={onClick}>
       {children}
     </button>
   );

@@ -78,13 +78,13 @@ const SpecialitySection: React.FC = (): JSX.Element => {
         <div className="flex justify-center gap-[30px] mt-[30px]">
           <div
             onClick={() => slider?.current?.slickPrev()}
-            className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955]  flex justify-center items-center  rounded-full text-center cursor-pointer"
+            className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955]  flex justify-center items-center  rounded-full text-center cursor-pointer hover:scale-110 transition"
           >
             <AiOutlineArrowLeft className="text-[20px] text-[#000000]" />
           </div>
           <div
             onClick={() => slider?.current?.slickNext()}
-            className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955] flex justify-center items-center rounded-full text-center cursor-pointer"
+            className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955] flex justify-center items-center rounded-full text-center cursor-pointer hover:scale-110 transition"
           >
             <AiOutlineArrowRight className="text-[20px] text-[#000000]" />
           </div>
