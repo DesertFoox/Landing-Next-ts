@@ -52,7 +52,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     ["get"],
     async () => await GetContactUsFormApi()
   );
-
+    console.log('====================================');
+    console.log(queryClient);
+    console.log('====================================');
   return {
     props: {
       dehydratedState: dehydrate(queryClient).queries[0].state.data,

@@ -10,8 +10,9 @@ axios.interceptors.response.use(
       error.response &&
       error.response.state >= 400 &&
       error.response.status < 500;
+    const problem = error
     if (!expectedError) {
-      return error.message
+      return problem
     }
     return Promise.reject(error);
   }

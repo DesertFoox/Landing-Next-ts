@@ -34,7 +34,7 @@ const ProblemForm: React.FC<IProblemFormProps> = ({ form }): JSX.Element => {
       message: data.message,
     };
     const res: any = await PostContactUsForm(mockData);
-    console.log(res);
+  
   };
 
   return (

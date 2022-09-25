@@ -14,12 +14,17 @@ const PostContactUsForm = async (
       "https://61cd783e7067f600179c5aa8.mockapi.io/api/ContactUs",
       postData
     );
-    toast.done(res);
 
-    return res;
+    console.log("====================================");
+    console.log(res);
+    console.log("====================================");
+    if (res.code === "ERR_BAD_REQUEST") {
+      toast.error(res.message);
+      return res
+    }
+    toast.success(res.message);
+    return res
   } catch (error: any) {
-    toast.error(error);
-
     return error;
   }
 };
