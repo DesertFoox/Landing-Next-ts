@@ -18,7 +18,7 @@ const ProblemForm: React.FC<IProblemFormProps> = ({ form }): JSX.Element => {
         <h2 className="text-[#222] text-[36px]">Lets Get In Touch Now</h2>
 
         <div className="w-[668px] pt-[60px] bg-white rounded-xl mt-12 px-[52px] pb-[48px]">
-          <div className="flex flex-row gap-10">
+          <div className="grid grid-cols-2 gap-9">
             {DynamicFormhandler(form)}
             {/* 
             <div className="flex flex-col gap-2 w-full">

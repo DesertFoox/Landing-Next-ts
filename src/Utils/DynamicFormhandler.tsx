@@ -8,11 +8,12 @@ import TextArea from "../Components/common/TextArea/TextArea";
 
 const DynamicFormhandler: React.FC<any> = (data): JSX.Element => {
   return data.map((element: IGetContactUsFormInterface) => {
+    <div></div>
     switch (element.field_name) {
       case EnumFieldName.email:
         return (
-          <div className="flex flex-col gap-2 w-full mt-12">
-            w
+          <div className="flex flex-col col-span-2">
+            
             <FormInput
               type={EnumFieldName.email}
               placeholder={element.field_placeholder}
@@ -24,7 +25,7 @@ const DynamicFormhandler: React.FC<any> = (data): JSX.Element => {
 
       case EnumFieldName.text:
         return (
-          <div className="flex flex-col gap-2 w-full">
+          <div className="flex flex-col w-full">
             <FormInput
               type={EnumFieldName.text}
               placeholder={element.field_placeholder}
@@ -35,7 +36,7 @@ const DynamicFormhandler: React.FC<any> = (data): JSX.Element => {
         );
       case EnumFieldName.text_area:
         return (
-          <div className="flex flex-col gap-2 w-full mt-12">
+          <div className="flex flex-col w-full col-span-2">
             <TextArea
               label={element.field_title}
               placeholder={element.field_placeholder}
@@ -45,7 +46,7 @@ const DynamicFormhandler: React.FC<any> = (data): JSX.Element => {
         );
       case EnumFieldName.select:
         return (
-          <div className="flex flex-col gap-2 w-full mt-12">
+          <div className="flex flex-col w-full col-span-2">
             <SelectOption
               label={element.field_title}
               className={"border-b border-[#E5E5E5]"}
