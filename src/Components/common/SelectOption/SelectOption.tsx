@@ -14,11 +14,12 @@ const SelectOption: React.FC<ISelectOptionProps> = ({
     <>
       <p className="text-[#222] text-[14px]">{label}</p>
       <select
-        className={`border-b border-[#E5E5E5] py-3 text-[13px] ${className}`}
+        value={options[0].value}
+        className={`border-b border-[#E5E5E5] py-3 text-[13px] outline-none ${className}`}
       >
-        {options.map((opt: IOptionDto,index:number) => (
-          <option key={index} defaultValue={opt.name} value={opt.value} disabled>
-            {opt.name}
+        {options.map((opt: IOptionDto, index: number) => (
+          <option key={index} >
+            {opt.text}
           </option>
         ))}
       </select>

@@ -20,42 +20,7 @@ const ProblemForm: React.FC<IProblemFormProps> = ({ form }): JSX.Element => {
         <div className="w-[668px] pt-[60px] bg-white rounded-xl mt-12 px-[52px] pb-[48px]">
           <div className="grid grid-cols-2 gap-9">
             {DynamicFormhandler(form)}
-            {/* 
-            <div className="flex flex-col gap-2 w-full">
-              <FormInput placeholder="Robert Lee" type="text">
-                First Name
-              </FormInput>
-            </div>
-
-            <div className="flex flex-col gap-2 w-full">
-              <FormInput placeholder="Anderson" type="text">
-                Last Name
-              </FormInput>
-            </div> */}
           </div>
-
-          {/* <div className="flex flex-col gap-2 w-full mt-12">
-            <FormInput placeholder="kevin.jones@mail.com" type="text">
-              Your Email Address{" "}
-            </FormInput>
-          </div>
-
-          <div className="flex flex-col gap-2 w-full mt-12">
-            <SelectOption
-              label={"Which Related Problem You Are Facing?"}
-              className={"border-b border-[#E5E5E5]"}
-              options={FormOption}
-            />
-          </div>
-
-          <div className="flex flex-col gap-2 w-full mt-12">
-            <TextArea
-              label="Type Your Message"
-              placeholder="Lorem Ipsum is simply dummy text of the printing and...……."
-              className="border-b border-[#E5E5E5]"
-            />
-          </div> */}
-
           <Button className="w-[145px] h-[48px] bg-gradient-to-r  from-[#6362D7] via-purple-500 to-[#FF8FE2] text-center px-4 py-2 mt-6 text-md rounded text-white">
             Our Works
           </Button>

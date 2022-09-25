@@ -5,7 +5,7 @@ export interface ISelectOptionProps {
 }
 
 export interface IOptionDto {
-  name: string;
+  text: string;
   value: number;
 }
 
