@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Slider, { Settings } from "react-slick";
+import Button from "../common/Button/Button";
 
 import SpecialityCard from "../SpecialityCard/SpecialityCard";
 
@@ -76,18 +77,18 @@ const SpecialitySection: React.FC = (): JSX.Element => {
           />
         </Slider>
         <div className="flex justify-center gap-[30px] mt-[30px]">
-          <div
+          <Button
             onClick={() => slider?.current?.slickPrev()}
             className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955]  flex justify-center items-center  rounded-full text-center cursor-pointer hover:scale-110 transition"
           >
             <AiOutlineArrowLeft className="text-[20px] text-[#000000]" />
-          </div>
-          <div
+          </Button>
+          <Button
             onClick={() => slider?.current?.slickNext()}
             className="w-[50px] h-[50px] shadow-[0px_10px_30px_#99999955] flex justify-center items-center rounded-full text-center cursor-pointer hover:scale-110 transition"
           >
             <AiOutlineArrowRight className="text-[20px] text-[#000000]" />
-          </div>
+          </Button>
         </div>
       </section>
     </>
