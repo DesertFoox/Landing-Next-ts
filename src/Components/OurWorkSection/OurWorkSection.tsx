@@ -8,7 +8,7 @@ const OurWorkSection = () => {
   return (
     <section className="container mx-auto ourworks mt-56">
       <div className="grid grid-cols-2">
-        <div>
+        <div className="mt-[80px]">
           <p className="text-4xl w-[296px]">The Process</p>
           <h2 className="text-4xl mt-2 font-bold w-[296px]">About Our Work</h2>
           <p className="mt-6 w-[486px] text-[#777]">

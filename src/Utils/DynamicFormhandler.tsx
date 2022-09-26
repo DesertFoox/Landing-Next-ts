@@ -16,7 +16,7 @@ const DynamicFormhandler: any = (
     switch (element.field_name) {
       case EnumFieldName.email:
         return (
-          <div className="flex flex-col col-span-2">
+          <div key={index} className="flex flex-col col-span-2">
             <FormInput
               register={register}
               registerName={element.field_postname}
@@ -31,7 +31,7 @@ const DynamicFormhandler: any = (
 
       case EnumFieldName.text:
         return (
-          <div className="flex flex-col w-full">
+          <div key={index} className="flex flex-col w-full">
             <FormInput
               register={register}
               registerName={element.field_postname}
@@ -49,7 +49,7 @@ const DynamicFormhandler: any = (
         );
       case EnumFieldName.text_area:
         return (
-          <div className="flex flex-col w-full col-span-2">
+          <div key={index} className="flex flex-col w-full col-span-2">
             <TextArea
               register={register}
               registerName={element.field_postname}
@@ -62,7 +62,7 @@ const DynamicFormhandler: any = (
         );
       case EnumFieldName.select:
         return (
-          <div className="flex flex-col w-full col-span-2">
+          <div key={index} className="flex flex-col w-full col-span-2">
             <SelectOption
               register={register}
               registerName={element.field_postname}
@@ -74,7 +74,7 @@ const DynamicFormhandler: any = (
           </div>
         );
       default:
-        <div>s</div>;
+        <div>no form found</div>;
     }
   });
 };
