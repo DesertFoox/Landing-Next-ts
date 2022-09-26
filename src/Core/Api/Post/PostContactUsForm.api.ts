@@ -14,15 +14,12 @@ const PostContactUsForm = async (
       postData
     );
 
-    console.log("====================================");
-    console.log(res);
-    console.log("====================================");
     if (res.code === "ERR_BAD_REQUEST") {
       toast.error(res.message);
-      return res
+      return res;
     }
-    toast.success(res.message);
-    return res
+    toast.success(res.data.message);
+    return res;
   } catch (error: any) {
     return error;
   }
