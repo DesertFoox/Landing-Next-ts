@@ -32,7 +32,7 @@ const Header: React.FC = (): JSX.Element => {
               <h2
                 className={`${
                   headerItem === item.name && "text-[#9D60EB]"
-                } cursor-pointer`}
+                } cursor-pointer hover:text-[#9D60EB] transition duration-300`}
               >
                 {item.name}
               </h2>
