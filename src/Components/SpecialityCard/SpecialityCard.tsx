@@ -14,7 +14,13 @@ const SpecialityCard: React.FC<ISpecialityCardProps> = ({
       <div
         className={`w-[350px] h-[440px] rounded-md shadow-[0px_10px_20px_#99999940]  text-center p-5 bg-300 ${className}`}
       >
-        <Image className="mt-[37px]" src={image} width={210} height={211} />
+        <Image
+          alt={title.bold}
+          className="mt-[37px]"
+          src={image}
+          width={210}
+          height={211}
+        />
         <p className="text-2xl  mt-[15px]">
           {title.normal} <strong className="font-bold">{title.bold}</strong>
         </p>

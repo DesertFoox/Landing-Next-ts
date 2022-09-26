@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,6 @@ import HeaderItem from "../../Constant/HeaderItem.json";
 const Header: React.FC = (): JSX.Element => {
   const [headerItem, setHeaderItem] = useState<string>("Home");
 
-  useEffect(() => {});
 
   return (
     <header className="container mx-auto flex justify-between mt-8 items-center">

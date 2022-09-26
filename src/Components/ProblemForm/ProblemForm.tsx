@@ -2,7 +2,7 @@ import React from "react";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from "react-toastify";
 
 import Button from "../common/Button/Button";
 
@@ -14,7 +14,6 @@ import DynamicFormhandler from "../../Utils/DynamicFormhandler";
 import ProblemFormSchema from "../../Core/Validations/ProblemFormSchema";
 
 import PostContactUsForm from "../../Core/Api/Post/PostContactUsForm.api";
-import { Toast } from "flowbite-react";
 
 const ProblemForm: React.FC<IProblemFormProps> = ({ form }): JSX.Element => {
   const {
@@ -33,8 +32,7 @@ const ProblemForm: React.FC<IProblemFormProps> = ({ form }): JSX.Element => {
       problemId: data.problemId,
       message: data.message,
     };
-    const res: any = await PostContactUsForm(mockData);
-  
+    await PostContactUsForm(mockData);
   };
 
   return (

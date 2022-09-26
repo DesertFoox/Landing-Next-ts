@@ -29,8 +29,8 @@ const ProductCard: React.FC<IProductCardProps> = ({
   };
 
   useEffect(() => {
-    getImageSize();
-  }, []);
+    getImageSize()
+  });
 
   return (
     <>

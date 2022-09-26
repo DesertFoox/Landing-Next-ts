@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import axios, {AxiosResponse } from "axios";
 
 axios.interceptors.response.use(
   (response: AxiosResponse): AxiosResponse => {

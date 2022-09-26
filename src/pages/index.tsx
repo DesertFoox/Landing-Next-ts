@@ -1,5 +1,4 @@
 import type {
-  NextPage,
   GetServerSideProps,
   InferGetStaticPropsType,
 } from "next";
@@ -19,7 +18,6 @@ import Footer from "../Components/Footer/Footer";
 
 import GetContactUsFormApi from "../Core/Api/Get/GetContactUsForm.api";
 
-import IGetContactUsFormInterface from "../Core/Interface/IGetContactUsFormInterface";
 
 const Home = ({
   dehydratedState,
@@ -45,7 +43,7 @@ const Home = ({
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const queryClient = new QueryClient();
 
   await queryClient.fetchQuery(

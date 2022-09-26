@@ -24,7 +24,7 @@ const OurWorkSection = () => {
           </Button>
         </div>
         <div>
-          <Image width={"557"} height={"466"} src={"/images/Ourwork.svg"}/>
+          <Image alt="ourwork" width={"557"} height={"466"} src={"/images/Ourwork.svg"}/>
         </div>
       </div>
     </section>
