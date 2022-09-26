@@ -6,7 +6,9 @@ const HeroSection: React.FC = (): JSX.Element => {
   return (
     <section className="herosection hero-bg mt-16 h-[688.3px]">
       <div className="flex flex-col  items-center">
-        <h1 className="text-5xl text-[#222222] font-bold">We Create Simple Solution</h1>
+        <h1 className="text-5xl text-[#222222] font-bold">
+          We Create Simple Solution
+        </h1>
         <h2 className="text-5xl text-[#222222] mt-2">For Your Complex Task</h2>
         <p className="text-[14px] text-[#555555] w-[532px] mt-6 text-center">
           Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
@@ -23,7 +25,13 @@ const HeroSection: React.FC = (): JSX.Element => {
           </Button>
         </div>
         <div className="mt-3 w-[827px] h-full text-center">
-          <img width="100%" className="mx-auto" height={"100%"} alt="heroimage" src={"/images/Group 2476.png"} />
+          <Image
+            width="827"
+            className="mx-auto"
+            height={"384"}
+            alt="heroimage"
+            src={"/images/Group 2476.png"}
+          />
         </div>
       </div>
     </section>

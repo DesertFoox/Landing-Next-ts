@@ -15,7 +15,7 @@ const Footer: React.FC = (): JSX.Element => {
     <div className="">
       <div className="max-w-7xl mx-auto flex flex-col items-center mt-6">
         <div className="my-14">
-          <Image src={"/images/Logo.svg"} width="141px" height="41px" />
+          <Image alt="logo" src={"/images/Logo.svg"} width="141px" height="41px" />
         </div>
 
         <div className="grid grid-cols-4 w-full">

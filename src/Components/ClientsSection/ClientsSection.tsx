@@ -10,6 +10,7 @@ const ClientsSection: React.FC = (): JSX.Element => {
       <h2 className="text-[#222] text-[36px] my-10">What Our Client Says</h2>
       <div className="rounded-full my-4">
         <Image
+          alt="alert"
           src={"/images/albert-dera-ILip77SbmOE-unsplash.png"}
           width={"187px"}
           height={"187px"}
@@ -18,14 +19,20 @@ const ClientsSection: React.FC = (): JSX.Element => {
 
       <div className="flex flex-row gap-14">
         <div>
-            <Image src={'/images/quote-left.png'} width='41px' height='28px' />
+          <Image alt="quoto-left" src={"/images/quote-left.png"} width="41px" height="28px" />
         </div>
         <p className="text-[#777] text-[24px] w-[532px] text-center">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore dolore magna
         </p>
         <div>
-            <Image src={'/images/quote-left.png'} className='-scale-x-100' width='41px' height='28px' />
+          <Image
+          alt="quoto-right"
+            src={"/images/quote-left.png"}
+            className="-scale-x-100"
+            width="41px"
+            height="28px"
+          />
         </div>
       </div>
 

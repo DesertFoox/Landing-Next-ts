@@ -20,7 +20,7 @@ const Header: React.FC = (): JSX.Element => {
     <header className="container mx-auto flex justify-between mt-8 items-center">
       <div className="flex flex-row">
       <div className="">
-        <Image src={"/images/Logo.svg"} width="141.51" height="41.23" />
+        <Image alt="logoheader" src={"/images/Logo.svg"} width="141.51" height="41.23" />
       </div>
       <div className="mt-3 ml-[9rem]">
         <div className="flex gap-12 text-base">
