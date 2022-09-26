@@ -1,0 +1,32 @@
+[
+  {
+    "image": "QuickRes.svg",
+    "title": { "normal": "Quick ", "bold": "Response" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  },
+  {
+    "image": "GreatCom.svg",
+    "title": { "normal": "Great ", "bold": "Communication" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  },
+  {
+    "image": "Satisfaction.svg",
+    "title": { "normal": "Customer ", "bold": "Satisfaction" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  },
+  {
+    "image": "QuickRes.svg",
+    "title": { "normal": "Quick ", "bold": "Response" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  },
+  {
+    "image": "GreatCom.svg",
+    "title": { "normal": "Great ", "bold": "Communication" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  },
+  {
+    "image": "Satisfaction.svg",
+    "title": { "normal": "Customer ", "bold": "Satisfaction" },
+    "description": "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
+  }
+]

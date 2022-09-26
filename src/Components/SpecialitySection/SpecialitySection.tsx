@@ -3,9 +3,12 @@ import React, { useState, useRef } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Slider, { Settings } from "react-slick";
-import Button from "../common/Button/Button";
 
+import Button from "../common/Button/Button";
 import SpecialityCard from "../SpecialityCard/SpecialityCard";
+
+import SpecialityCardData from "../../Constant/SpecialityCard.json";
+import ISpecialityCardProps from "../../Core/PropInterface/ISpecialityCardProps";
 
 const SpecialitySection: React.FC = (): JSX.Element => {
   const [sliderSetting] = useState<Settings>({
@@ -27,54 +30,14 @@ const SpecialitySection: React.FC = (): JSX.Element => {
           <h2 className="font-bold"> Speciality Of Us ?</h2>
         </div>
         <Slider ref={slider} className="bg-white mt-[40px]" {...sliderSetting}>
-          <SpecialityCard
-            image={"/images/QuickRes.svg"}
-            title={{ normal: "Quick ", bold: "Response" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />
-          <SpecialityCard
-            image={"/images/GreatCom.svg"}
-            title={{ normal: "Great ", bold: "Communication" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />
-          <SpecialityCard
-            image={"/images/Satisfaction.svg"}
-            title={{ normal: "Customer", bold: "Satisfaction" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />{" "}
-          <SpecialityCard
-            image={"/images/QuickRes.svg"}
-            title={{ normal: "Quick ", bold: "Response" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />
-          <SpecialityCard
-            image={"/images/GreatCom.svg"}
-            title={{ normal: "Great ", bold: "Communication" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />
-          <SpecialityCard
-            image={"/images/Satisfaction.svg"}
-            title={{ normal: "Customer", bold: "Satisfaction" }}
-            description={
-              "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec  concludaturque ndo. Verear"
-            }
-            className={""}
-          />
+          {SpecialityCardData.map((item: any) => (
+            <SpecialityCard
+              image={`/images/${item.image}`}
+              title={{ normal: item.title.normal, bold: item.title.bold }}
+              description={item.description}
+              className={""}
+            />
+          ))}
         </Slider>
         <div className="flex justify-center gap-[30px] mt-[30px]">
           <Button
