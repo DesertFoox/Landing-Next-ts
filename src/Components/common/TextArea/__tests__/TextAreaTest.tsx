@@ -4,8 +4,8 @@ import "@testing-library/jest-dom";
 
 import TextArea from "../TextArea";
 
-describe("Input", () => {
-  test("renders Input and check typing", async () => {
+describe("TextArea", () => {
+  test("renders TextArea and check typing", async () => {
     render(
       <TextArea
         label={"test  label"}
