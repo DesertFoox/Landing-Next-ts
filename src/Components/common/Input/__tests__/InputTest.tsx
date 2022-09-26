@@ -14,8 +14,8 @@ describe("Input", () => {
       />
     );
     const input: any = screen.getByRole("textbox");
-    await userEvent.type(input, "typing stupid thing here to test");
     expect(input).toBeInTheDocument();
+    await userEvent.type(input, "typing stupid thing here to test");
     expect(input.value).toBe("typing stupid thing here to test");
   });
 });

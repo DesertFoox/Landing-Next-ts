@@ -7,18 +7,25 @@ const FormInput: React.FC<IFormInputProps> = ({
   type,
   placeholder,
   registerName,
-  register
+  register,
 }): JSX.Element => {
-
   return (
     <>
       <p className="text-[#222] text-[14px]">{children}</p>
-      <input
-        {...register(registerName)}
-        type={type}
-        className="border-b border-[#E5E5E5] py-3 text-[13px] outline-none"
-        placeholder={placeholder}
-      />
+      {register ? (
+        <input
+          {...register(registerName)}
+          type={type}
+          className="border-b border-[#E5E5E5] py-3 text-[13px] outline-none"
+          placeholder={placeholder}
+        />
+      ) : (
+        <input
+          type={type}
+          className="border-b border-[#E5E5E5] py-3 text-[13px] outline-none"
+          placeholder={placeholder}
+        />
+      )}
     </>
   );
 };
