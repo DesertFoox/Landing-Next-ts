@@ -12,7 +12,6 @@ const DynamicFormhandler: any = (
   errors: any
 ): any => {
   return data.map((element: IGetContactUsFormInterface, index: number) => {
-    <div></div>;
     switch (element.field_name) {
       case EnumFieldName.email:
         return (

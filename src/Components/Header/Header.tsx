@@ -15,7 +15,7 @@ const Header: React.FC = (): JSX.Element => {
   const [headerItem, setHeaderItem] = useState<string>("Home");
 
   return (
-    <header className="container  mx-auto flex justify-between mt-8 items-center">
+    <header className="container mx-auto flex justify-between mt-8 items-center">
       <div className="flex flex-row">
         <div className="">
           <Image
