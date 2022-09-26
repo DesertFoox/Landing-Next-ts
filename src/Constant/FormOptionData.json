@@ -1,6 +1,6 @@
 [
-  { "name": "i dnnno","value": 3 },
-  { "name": "i dnnno","value": 5 },
-  { "name": "i dnnno" ,"value": 12},
-  { "name": "i dnnno", "value": 4 }
+  { "text": "i dnnno", "value": 3 },
+  { "text": "i dnnno", "value": 5 },
+  { "text": "i dnnno", "value": 12 },
+  { "text": "i dnnno", "value": 4 }
 ]

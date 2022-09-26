@@ -12,11 +12,18 @@ const TextArea: React.FC<ITextAreaProps> = ({
   return (
     <>
       <p className="text-[#222] text-[14px]">{label}</p>
-      <textarea
-        {...register(registerName)}
-        className={`max-h-[100px] text-[13px] min-h-[100px] ${className}  mt-3 outline-none`}
-        placeholder={placeholder}
-      ></textarea>
+      {register ? (
+        <textarea
+          {...register(registerName)}
+          className={`max-h-[100px] text-[13px] min-h-[100px] ${className}  mt-3 outline-none`}
+          placeholder={placeholder}
+        ></textarea>
+      ) : (
+        <textarea
+          className={`max-h-[100px] text-[13px] min-h-[100px] ${className}  mt-3 outline-none`}
+          placeholder={placeholder}
+        ></textarea>
+      )}
     </>
   );
 };
