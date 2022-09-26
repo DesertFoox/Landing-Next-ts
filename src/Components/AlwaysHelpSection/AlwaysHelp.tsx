@@ -6,7 +6,12 @@ const AlwaysHelp = () => {
     <section className="container mx-auto ourworks mt-32">
       <div className="grid grid-cols-2">
         <div>
-          <Image width={"666"} height={"458"} src={"/images/AlwaysHelp.svg"} />
+          <Image
+            alt="help"
+            width={"666"}
+            height={"458"}
+            src={"/images/AlwaysHelp.svg"}
+          />
         </div>
         <div className="ml-16 mt-32">
           <p className="text-4xl w-[296px]">We are here to </p>
