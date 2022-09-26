@@ -9,7 +9,7 @@ import IHeaderInterface from "../../Core/Interface/IHeaderInterface";
 import Button from "../common/Button/Button";
 import Input from "../common/Input/Input";
 
-import HeaderItem from "../../Constant/HeaderItem.json";
+import HeaderItem from "../../Constant/HeaderItemData.json";
 
 const Header: React.FC = (): JSX.Element => {
   const [headerItem, setHeaderItem] = useState<string>("Home");

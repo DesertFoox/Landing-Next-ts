@@ -6,9 +6,9 @@ import { CgFacebook } from "react-icons/cg";
 import { AiOutlineSkype, AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-import HeaderItem from "../../Constant/HeaderItem.json";
-import SocialContacts from "../../Constant/SocialContacts.json";
-import Contactus from "../../Constant/ContactUs";
+import HeaderItem from "../../Constant/HeaderItemData.json";
+import SocialContacts from "../../Constant/SocialContactsData.json";
+import Contactus from "../../Constant/ContactUsData";
 
 const Footer: React.FC = (): JSX.Element => {
   return (

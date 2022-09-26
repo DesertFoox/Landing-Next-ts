@@ -1,5 +1,8 @@
 import React from "react";
+
 import ProductCard from "../ProductCard/ProductCard";
+
+import ProdocutCardData from "../../Constant/ProductCardData.json";
 
 const ProductSection: React.FC = (): JSX.Element => {
   return (
@@ -16,50 +19,14 @@ const ProductSection: React.FC = (): JSX.Element => {
         </p>
       </div>
       <div className="cards flex flex-wrap flex-row p-8 justify-center items-center gap-[30px] mt-2">
-        <ProductCard
-          image={"/images/Earth.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-        />
-        <ProductCard
-          image={"/images/HexLab.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-          className="mb-[40px]"
-        />{" "}
-        <ProductCard
-          image={"/images/Liva.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-        />{" "}
-        <ProductCard
-          image={"/images/Lighting.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-        />
-        <ProductCard
-          image={"/images/Aven.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-          className="mb-[40px]"
-        />{" "}
-        <ProductCard
-          image={"/images/Ideaa.svg"}
-          description={
-            "Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec"
-          }
-          href="#"
-        />
+        {ProdocutCardData.map((item: any, index: number) => (
+          <ProductCard
+            className={index === 1 || index === 4 ? "mb-[40px]" : ""}
+            image={`/images/${item.image}`}
+            description={item.description}
+            href={item.href}
+          />
+        ))}
       </div>
       <div className="flex justify-center gap-[30px] mt-[30px]"></div>
     </section>

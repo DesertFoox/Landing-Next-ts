@@ -7,8 +7,7 @@ import Slider, { Settings } from "react-slick";
 import Button from "../common/Button/Button";
 import SpecialityCard from "../SpecialityCard/SpecialityCard";
 
-import SpecialityCardData from "../../Constant/SpecialityCard.json";
-import ISpecialityCardProps from "../../Core/PropInterface/ISpecialityCardProps";
+import SpecialityCardData from "../../Constant/SpecialityCardData.json";
 
 const SpecialitySection: React.FC = (): JSX.Element => {
   const [sliderSetting] = useState<Settings>({
