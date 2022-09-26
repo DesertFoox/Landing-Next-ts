@@ -21,6 +21,7 @@ const ProductSection: React.FC = (): JSX.Element => {
       <div className="cards flex flex-wrap flex-row p-8 justify-center items-center gap-[30px] mt-2">
         {ProdocutCardData.map((item: any, index: number) => (
           <ProductCard
+            key={index}
             className={index === 1 || index === 4 ? "mb-[40px]" : ""}
             image={`/images/${item.image}`}
             description={item.description}

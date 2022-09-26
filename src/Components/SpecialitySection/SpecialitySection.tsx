@@ -29,8 +29,9 @@ const SpecialitySection: React.FC = (): JSX.Element => {
           <h2 className="font-bold"> Speciality Of Us ?</h2>
         </div>
         <Slider ref={slider} className="bg-white mt-[40px]" {...sliderSetting}>
-          {SpecialityCardData.map((item: any) => (
+          {SpecialityCardData.map((item: any, index: number) => (
             <SpecialityCard
+              key={index}
               image={`/images/${item.image}`}
               title={{ normal: item.title.normal, bold: item.title.bold }}
               description={item.description}
